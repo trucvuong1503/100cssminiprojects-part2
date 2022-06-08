@@ -1,0 +1,32 @@
+
+/* www.freepik.com */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ea2027;
+}
+h1{
+    font-size: 50px;
+    color: white;
+}
+
+span:before{
+    content: "TRANSITIONS";
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: word-switch 5s infinite;
+    color: #1b1464;
+}
+@keyframes word-switch{
+    0%{
+        content: "transitions";
+    }
+    50%{
+        content: "animations";
+    }
+    100%{
+        content: "transforms";
+    }
+}
